@@ -1,0 +1,52 @@
+maxWidth(max)
+  width 100%
+  max-width max
+
+pos(top = 0, left = 0)
+  top top
+  left left
+wh(width = auto, height = auto)
+  width width
+  height height
+
+fullscreen(param = param is defined ? param : absolute)
+  position param
+  wh(100vw, 100vh)
+  pos(0,0)
+
+/**
+ * images | backgrounds
+ */
+bg-img(size = contain, attached = inherit)
+  background-repeat no-repeat
+  background-size size
+  background-position center
+  background-attachment attached
+/**
+ * before and after psudo blocks
+ */
+
+before()
+  &:before 
+    content ''
+    position absolute
+    top 0
+    wh(100%, 100%)
+    {block}
+
+after()
+  &:after 
+    content ''
+    position absolute
+    top 0
+    wh(100%, 100%)
+    {block}
+
+onAfter()
+  &:hover
+    &:after
+      {block}
+onBefore()
+  &:hover
+    &:before
+      {block}

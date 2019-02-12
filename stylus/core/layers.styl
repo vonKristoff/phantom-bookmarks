@@ -1,0 +1,24 @@
+/**
+ * Layers
+ * Useful for SPA Layout
+ * 0 : background
+ * 1 : view
+ * 2 : hud (heads-up-display)
+ * 3 : foreground | modal
+ */
+
+[class^="layer"]
+  position relative
+  width 100vw
+  height 100vh
+  overflow hidden
+
+.layer
+  &--hud
+    background inherit  
+  &--background
+    background inherit
+  &--foreground
+    background inherit
+  &--view
+    background inherit

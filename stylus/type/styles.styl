@@ -1,0 +1,34 @@
+/**
+ * TEXT styles
+ */
+
+.tx-superscript
+  vertical-align super
+  font-size .5rem    
+  padding-left .5em
+.tx-small
+  font-size .88em
+  font-weight 100
+.tx-summary
+  font-weight bold
+  font-size 1em
+.tx-centre, .tx-center
+  text-align center
+.tx-italic
+  font-style italic
+.tx-thin
+  font-weight 100
+.tx-bold
+  font-family _header
+  font-weight bold
+
+.tx-highlight
+  &--red
+    background-color red
+
+.tx-underline
+  position relative
+  +after()
+    width 100%
+    bottom 0
+    border 1px solid black
