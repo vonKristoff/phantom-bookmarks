@@ -99,4 +99,6 @@ With the time I had, certain things had to be missed out on - such as decent for
 
 Again, I was not trying to be a maverick - but general time didn't allow me to switch clothes quick enough to employ your Google standards.
 
+might not have enough code comments - trying to get this to you ASAP
+
 Thanks for your time!

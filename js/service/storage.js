@@ -1,3 +1,4 @@
+// Handles Local Storage Settings
 const APP_KEY = "PHANTOM"
 const Storage = {
     getStore() {
