@@ -8,6 +8,7 @@ const methods = {
 	response,
 	footer
 }
+// mini factory to help generate components
 export default {
 	make(obj) {
 		let name = Object.keys(obj).pop()

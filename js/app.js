@@ -3,6 +3,7 @@ import database from './utils/database'
 import Controller from './controller'
 export default {
 	init() {
+		// boot app | check whether theres already data | or run for the first time
 		checkDataStore(Storage.hasStore()).loadView((bookmarks) => Controller.make(bookmarks))
 	},
 	reset() {

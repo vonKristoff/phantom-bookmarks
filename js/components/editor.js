@@ -1,6 +1,7 @@
 export default {
 	mount(override) {
-		if(!this.mounted || override) {			
+		if(!this.mounted || override) {
+			// selectors	
 			let $c = this.children 
 			$c.form = this.el.querySelector('.editor_form')
 			$c.close = this.el.querySelector('.fa--close')
@@ -32,6 +33,7 @@ export default {
 		e.preventDefault()
 		let fields = this.children.form.querySelectorAll('.is-model')
 		let payload = []
+		// grab value from input fields
 		fields.forEach(el => {
 			payload.push({ key: el.name, value: el.value })
 		})

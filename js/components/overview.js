@@ -1,5 +1,6 @@
 export default {
 	mount(override) {
+		// add event listeners and set selectors
 		if(!this.mounted || override) {	
 			this.children.newitem = this.el.querySelector('.action-add')
 			this.children.bookmarks = this.el.querySelectorAll('.bookmark_item')
