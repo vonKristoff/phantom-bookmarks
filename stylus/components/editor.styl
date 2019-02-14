@@ -1,0 +1,44 @@
+.modal--editor
+	color #333
+	.is-card
+		transform translateX(50vw)
+		opacity 0
+	&.is-active .is-card
+		transform translateX(0)
+		opacity 1
+	.content
+		width 100%
+		max-width 400px
+	.editor_form
+		display flex
+		flex-direction column				
+	.field
+		display flex
+		align-items center
+		padding .5em 0
+		justify-content space-between
+		label
+			padding 0 .5em
+		input
+			flex 0 0 auto
+			border .125em solid #333
+			border-radius 2em
+			padding 1em 2em
+			&:focus
+				background-color coral
+		&.has-error
+			input
+				border .125em solid #d9143d
+				background-color #d9143d
+				color #fff
+	.editor_submit
+		margin-top 1em
+		cursor pointer
+		font-family inherit
+		border .125em solid #333
+		border-radius 2em
+		padding 1em 2em
+		flex 0 1 auto
+		background-color #333
+		color #efefef
+		
