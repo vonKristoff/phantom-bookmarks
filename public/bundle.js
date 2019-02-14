@@ -23,7 +23,7 @@
     	{
     		id: 0,
     		label: "Blog of Cats",
-    		url: "",
+    		url: "http://random.cat",
     		tags: []
     	},{
     		id: 1,
@@ -376,6 +376,7 @@
     	},
     	reset: function reset() {
     		if(Storage.hasStore()) { Storage.removeStore(); }
+    		console.log("LocalStorage has been cleared :)");
     	}
     };
 
@@ -388,7 +389,8 @@
     	return { loadView: loadView }
     }
 
-    window.phantom = App.init();
+    window.phantom = App;
+    window.phantom.init();
 
 }());
 //# sourceMappingURL=bundle.js.map

@@ -7,6 +7,7 @@ export default {
 	},
 	reset() {
 		if(Storage.hasStore()) Storage.removeStore()
+		console.log("LocalStorage has been cleared :)")
 	}
 }
 

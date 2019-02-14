@@ -38,7 +38,11 @@ npm start	// opens a tab at http://localhost:3000/
 
 Find the compiled code in the `public` directory.
 
+**Clearup** - open the browser console ..
 
+```
+phantom.reset() // clears out the LocalStorage
+```
 
 **Technologies used**
 
