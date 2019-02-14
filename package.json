@@ -45,9 +45,5 @@
     "postbuild:css": "purifycss stylus/style.css public/*.html --info --out public/style.css",
     "compile:templates": "pug pug/components -o js/templates/",
     "compile:pages": "pug pug/views -H -o public/"
-  },
-  "dependencies": {
-    "fg-loadcss": "latest",
-    "vue": "latest"
   }
 }
