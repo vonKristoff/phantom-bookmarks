@@ -1,0 +1,26 @@
+[class^="modal"]
+	position absolute
+	top 0
+	left 0
+	width 100vw
+	height 100vh
+	display flex
+	justify-content center
+	align-items center
+	pointer-events none
+	&.is-active
+		pointer-events auto
+	.is-card
+		transition all .3s
+		border-radius 1em
+		padding 2em
+		background-color #efefef
+		box-shadow 0 0 8em black
+	.content
+		position relative
+		.head
+			position absolute
+			top 0
+			right 0 
+			padding 1em
+			cursor pointer
